@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>countries</title>
+  <link rel="stylesheet" href="./css/bootstrap5.min.css">
+</head>
+<body>
+<header class="bg-dark p-2">
+  <div class="container">
+    <h1 class="text-white text-center m-0">Countries API</h1>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <h2 class="visually-hidden">search form section</h2>
+      <form class="js-search-form" action="https://restcountries.com/#api-endpoints-v2" method="GET">
+        <input class="js-search-input form-control mt-5 mb-5" type="text" name="search_country" aria-label="search_country" placeholder="Search" required>
+      </form>
+    </div>
+  </section>
+
+<section>
+  <div class="container-xxl">
+    <h3 class="visually-hidden">countries section</h3>
+    <span class="js-info"></span>
+    <div class="row countries-list">
+
+    </div>
+  </div>
+</section>
+</main>
+
+<template id="countries-item-template">
+  <div class="col-md-4">
+    <img class="js-country-flag d-block img-fluid" src="" alt="">
+    <div class="d-flex align-items-center mt-1">
+      <span>Population: <span class="population"></span></span>
+    </div>
+    <div class="d-flex align-items-center mt-1">
+      <span>Region: <span class="region"></span></span>
+    </div>
+    <div class="d-flex align-items-center mt-1">
+      <span>Capital: <span class="capital"></span></span>
+    </div>
+  </div>
+</template>
+
+<script src="js/bootstrap5.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
