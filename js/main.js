@@ -20,7 +20,7 @@ function getJSON(url){
 }
 
 function showCountries(data){
-  elCountriesList.innerHTML = null;
+  elCountriesList.innerHTML = "";
   const elCountriesFragment = document.createDocumentFragment();
   data.forEach(country => {
     const elCountry = elCountriesTemplate.cloneNode(true);
