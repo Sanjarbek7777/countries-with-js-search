@@ -6,6 +6,17 @@ const elSearchForm = document.querySelector('.js-search-form');
 const elSearchInput = document.querySelector('.js-search-input');
 const elCountriesList = document.querySelector('.countries-list');
 const elCountriesTemplate = document.querySelector('#countries-item-template').content;
+const elDarkButton = document.querySelector('.js-dark-mode-btn');
+const elSiteBody = document.querySelector('.body');
+const elSiteHeaderLink = document.querySelector('.site-header-link');
+
+if (elDarkButton) {
+  elDarkButton.addEventListener('click', function(evt){
+    elDarkButton.classList.toggle('btn-dark');
+    elSiteBody.classList.toggle('bg-dark');
+    elSiteHeaderLink.classList.toggle('text-white');
+  });
+}
 
 function getJSON(url){
   fetch(url)

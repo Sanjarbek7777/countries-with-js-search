@@ -7,12 +7,12 @@
   <title>countries</title>
   <link rel="stylesheet" href="./css/bootstrap5.min.css">
 </head>
-<body>
+<body class="body">
 <header class="shadow-sm">
   <div class="container">
     <div class="d-flex align-items-center justify-content-between p-3">
-      <a class="text-decoration-none text-dark fw-bold" href="#">Where in the world?</a>
-      <button class="btn ">Dark mode</button>
+      <a class="site-header-link text-decoration-none text-dark fw-bold" href="#">Where in the world?</a>
+      <button class="btn js-dark-mode-btn">Dark mode</button>
     </div>
   </div>
 </header>
@@ -31,7 +31,7 @@
   <div class="container-xxl">
     <h3 class="visually-hidden">countries section</h3>
     <span class="js-info"></span>
-    <div class="row countries-list">
+    <div class="row justify-content-between countries-list">
 
     </div>
   </div>
@@ -39,7 +39,7 @@
 </main>
 
 <template id="countries-item-template">
-  <div class="col-md-4 shadow-sm p-2 mb-3">
+  <div class="col-md-4 shadow-sm bg-white p-2 mb-3">
     <img class="js-country-flag d-block img-fluid" src="" alt="">
     <div class="mt-1">
       <h3 class="js-country-name"></h3>
