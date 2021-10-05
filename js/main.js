@@ -25,6 +25,7 @@ function showCountries(data){
   data.forEach(country => {
     const elCountry = elCountriesTemplate.cloneNode(true);
     elCountry.querySelector('.js-country-flag').src = country.flags.svg;
+    elCountry.querySelector('.js-country-name').textContent = country.name.common;
     elCountry.querySelector('.population').textContent = country.population;
     elCountry.querySelector('.region').textContent = country.region;
     elCountry.querySelector('.capital').textContent = country.capital;
