@@ -45,3 +45,17 @@ function onSearchFormSubmit(evt){
 if(elSearchForm){
   elSearchForm.addEventListener('submit', onSearchFormSubmit);
 }
+
+// function uppercase(str){
+//   return str.toUpperCase();
+// }
+
+// function lowercase(str){
+//   return str.toLowerCase();
+// }
+
+// function changeCase(str, callbackFn){
+//   return callbackFn(str);
+// }
+
+// console.log(changeCase('hello', uppercase));

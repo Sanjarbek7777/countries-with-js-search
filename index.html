@@ -8,9 +8,12 @@
   <link rel="stylesheet" href="./css/bootstrap5.min.css">
 </head>
 <body>
-<header class="bg-dark p-2">
+<header class="shadow-sm">
   <div class="container">
-    <h1 class="text-white text-center m-0">Countries API</h1>
+    <div class="d-flex align-items-center justify-content-between p-3">
+      <a class="text-decoration-none text-dark fw-bold" href="#">Where in the world?</a>
+      <button class="btn ">Dark mode</button>
+    </div>
   </div>
 </header>
 
@@ -19,7 +22,7 @@
     <div class="container">
       <h2 class="visually-hidden">search form section</h2>
       <form class="js-search-form" action="https://restcountries.com/#api-endpoints-v2" method="GET">
-        <input class="js-search-input form-control mt-5 mb-5" type="text" name="search_country" aria-label="search_country" placeholder="Search" required>
+        <input class="js-search-input form-control mt-5 mb-5 border-0 shadow-sm" type="text" name="search_country" aria-label="search_country" placeholder="Search" required>
       </form>
     </div>
   </section>
@@ -36,7 +39,7 @@
 </main>
 
 <template id="countries-item-template">
-  <div class="col-md-4 shadow-sm">
+  <div class="col-md-4 shadow-sm p-2 mb-3">
     <img class="js-country-flag d-block img-fluid" src="" alt="">
     <div class="mt-1">
       <h3 class="js-country-name"></h3>
